@@ -1,13 +1,13 @@
 import os
-
+from config import api_id, api_hash, bot_token
 import converter
 import pyrogram
 from pyrogram import Client, filters
 
 app = Client("hand bot",
-	bot_token ="your token",
-	api_id= int("your api id"),
-	api_hash= "your api hash")
+	bot_token,
+	api_id,
+	api_hash)
 @app.on_message(filters.command(["start", "help"]))
 def start_command(bot, message):
 	text  = f"""
