@@ -5,9 +5,9 @@ import pyrogram
 from pyrogram import Client, filters
 
 app = Client("hand bot",
-	bot_token,
-	api_id,
-	api_hash)
+	bot_token = bot_token,  
+	api_id = api_id,
+	api_hash = api_hash)
 @app.on_message(filters.command(["start", "help"]))
 def start_command(bot, message):
 	text  = f"""
