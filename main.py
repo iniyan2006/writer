@@ -6,7 +6,7 @@ from pyrogram import Client, filters
 app = Client("hand bot",
 	bot_token = str(os.environ.get("bot_token")),  
 	api_id = str(os.environ.get("api_id")),
-	api_hash = str(os.environ.get("api_hash"))
+	api_hash = str(os.environ.get("api_hash")))
 @app.on_message(filters.command(["start", "help"]))
 def start_command(bot, message):
 	text  = f"""
