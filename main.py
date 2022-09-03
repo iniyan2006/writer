@@ -15,7 +15,7 @@ def start_command(bot, message):
 	version of the text in image format
 	"""
 	message.reply_text(text)
-	message.reply_video("./Telegram")
+	message.reply_video("tg.mp4")
 @app.on_message(filters.text)
 def image_converter(bot, message):
 	process = message.reply_text("please wait ...")
